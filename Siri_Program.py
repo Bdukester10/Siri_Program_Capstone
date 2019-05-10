@@ -46,25 +46,25 @@ while True:
     tm.sleep(1)
     question = input('>>>')
 #shows the condition outside
-##    if 'condition' in question:
-##        area = input(speak.Speak("What city do you want the weather for?: "))
-##        speak.Speak("Loading weather data for" + area)
-##        location = weather.lookup_by_location(area)
-##        condition = location.condition
-##        tm.sleep(1)
-##        speak.Speak("It is " + condition.text + " in " + area + " right now")
-###shows a 7-day outlook
-##    if 'weather' in question:
-##        location = weather.lookup_by_location("roswell")
-##        condition = location.condition
-##        forecasts = location.forecast
-##        for forecast in forecasts:
-##            print(forecast.text)
-##            print(forecast.date)
-##            print(forecast.high)
-##            print(forecast.low)
-##            print(forecast.day)
-##            print(forecast.code)
+    if 'condition' in question:
+        area = input(speak.Speak("What city do you want the weather for?: "))
+        speak.Speak("Loading weather data for" + area)
+        location = weather.lookup_by_location(area)
+        condition = location.condition
+        tm.sleep(1)
+        speak.Speak("It is " + condition.text + " in " + area + " right now")
+#shows a 7-day outlook
+    if 'weather' in question:
+        location = weather.lookup_by_location("roswell")
+        condition = location.condition
+        forecasts = location.forecast
+        for forecast in forecasts:
+            print(forecast.text)
+            print(forecast.date)
+            print(forecast.high)
+            print(forecast.low)
+            print(forecast.day)
+            print(forecast.code)
 #prints the current date/time
     if 'time' in question:
         speak.Speak("The time is")
@@ -371,25 +371,25 @@ Using these as well as owning and editing walls in the same 1x1 as your enemy ca
         if ans == 'no':
             speak.Speak("Ok")
 #plays a song
-##    if 'play a song' in question:
-##        speak.Speak("Currently, my song list is very short")
-##        song = input(speak.Speak("What song do you want to play?"))
-##        if 'happier' in song:
-##            mixer.init()
-##            mixer.music.load('G:\happier.mp3')
-##            mixer.music.play()
-##        if 'despacito' in song:
-##            mixer.init()
-##            mixer.music.load('G:\Despacito.mp3')
-##            mixer.music.play()
-##        if 'gods plan' in song:
-##            mixer.init()
-##            mixer.music.load("G:\Drake - God's Plan.mp3")
-##            mixer.music.play()
-###stops the songs
-##    if 'stop the song' in question:
-##        mixer.music.pause()
-##        speak.Speak("Music stopped")
+    if 'play a song' in question:
+        speak.Speak("Currently, my song list is very short")
+        song = input(speak.Speak("What song do you want to play?"))
+        if 'happier' in song:
+            mixer.init()
+            mixer.music.load('G:\happier.mp3')
+            mixer.music.play()
+        if 'despacito' in song:
+            mixer.init()
+            mixer.music.load('G:\Despacito.mp3')
+            mixer.music.play()
+        if 'gods plan' in song:
+            mixer.init()
+            mixer.music.load("G:\Drake - God's Plan.mp3")
+            mixer.music.play()
+#stops the songs
+    if 'stop the song' in question:
+        mixer.music.pause()
+        speak.Speak("Music stopped")
 #subtracts up to 3 numbers
     elif 'subtract' in question:
         amt_sub = input(speak.Speak('How many numbers would you like to add?'))
@@ -425,6 +425,6 @@ Using these as well as owning and editing walls in the same 1x1 as your enemy ca
 
 
     elif "print feedback" in question:
-        print(feedback_list)
+        print(str(feedback_list))
     else:
         speak.Speak("I do not understand at this time.")
