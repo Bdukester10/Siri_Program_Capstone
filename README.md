@@ -4,3 +4,5 @@ I first decided to make this when SIRI and Cortana failed me many, many times. I
 I started as a capstone project for my school, and then branched into a deep passion of mine. I decided that even after I had completed the school year and the work should be over, I would continue working on it. i really hope you enjoy this program I have been working on.
 # Notes
 Make sure you run the .bat file (windows only) or else the program will not function.
+Also make sure that you have all of the files downloaded, or else certan functions may not work.
+These extra programs are called "Plugins" If you dont want one, dont download it.
