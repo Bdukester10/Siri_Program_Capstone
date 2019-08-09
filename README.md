@@ -6,3 +6,4 @@ I started as a capstone project for my school, and then branched into a deep pas
 Make sure you run the .bat file (windows only) or else the program will not function.
 Also make sure that you have all of the files downloaded, or else certan functions may not work.
 These extra programs are called "Plugins" If you dont want one, dont download it.
+Please make sure you have Python downloaded
