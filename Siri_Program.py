@@ -31,7 +31,7 @@ try:
     speak = wc.Dispatch("Sapi.SpVoice")
 except ImportError:
     print("Cannot speak, no speak module")
-print("===================__Beta version 1.4__ ====================")
+print("===================__Version 1.01__ ====================")
 tm.sleep(1)
 name = "David"
 now = datetime.datetime.now()
