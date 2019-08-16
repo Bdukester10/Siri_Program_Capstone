@@ -1,12 +1,49 @@
-import win32com.client as wc
-import time as tm
-import winsound
-import math
-import datetime
-import random
-import calendar
-import webbrowser
-from pygame import mixer
+try:
+    import pygame
+except ImportError;
+    print("Module 'pygame' may have an error or not installed")
+try:
+    import webbrowser
+except ImportError;
+    print("Module 'webbrowser' may have an error or not installed")
+try:
+    import calendar
+except ImportError;
+    print("Module 'calendar' may have an error or not installed")
+try:
+    import random
+except ImportError;
+    print("Module 'random' may have an error or not installed")
+try:
+    import datetime
+except ImportError;
+    print("Module 'datetime' may have an error or not installed")
+try:
+    import math
+except ImportError;
+    print("Module 'math' may have an error or not installed")
+try:
+    import winsound
+except ImportError;
+    print("Module 'winsound' may have an error or not installed")
+try:
+    import time as tm
+except ImportError;
+    print("Module 'time' may have an error or not installed")
+try:
+    import speech_recognition as sr
+except ImportError:
+    print("Module 'speech_recognition' may have an error or not installed")
+try:
+    from weather import Weather, Unit
+    weather = Weather(unit=Unit.CELSIUS)
+except ImportError:
+    print("Module 'weather' may have an error or not installed")
+try:
+    import win32com.client as wc
+    speak = wc.Dispatch("Sapi.SpVoice")
+except ImportError:
+    print("Module 'win32com.client' may have an error or not installed")
 
 cal = calendar.month(2019, 5 )
 new = 2
@@ -31,7 +68,7 @@ try:
     speak = wc.Dispatch("Sapi.SpVoice")
 except ImportError:
     print("Cannot speak, no speak module")
-print("===================__Version 1.01__ ====================")
+print("===================__Version 1.10__ ====================")
 tm.sleep(1)
 name = "David"
 now = datetime.datetime.now()
